@@ -8,10 +8,7 @@ import { fileURLToPath } from 'url';
 import analyzeRoutes from './routes/analyze.js';
 import authRoutes from './routes/auth.js';
 import feedbackRoutes from './routes/feedback.js';
-import testGeminiRoutes from './routes/test-gemini.js';
 import chatRoutes from './routes/chat.js';
-
-import recordingsRoutes from './routes/recordings.js';
 import fs from 'fs';
 
 dotenv.config();
@@ -98,10 +95,7 @@ app.get('/health', async (req, res) => {
 app.use('/api/analyze', analyzeRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/feedback', feedbackRoutes);
-app.use('/api/test-gemini', testGeminiRoutes);
 app.use('/api/chat', chatRoutes);
-app.use('/api/settings', settingsRoutes);
-app.use('/api/recordings', recordingsRoutes);
 
 // Obsługa błędów z więcej szczegółami
 app.use((err, req, res, next) => {
