@@ -10,7 +10,7 @@ import authRoutes from './routes/auth.js';
 import feedbackRoutes from './routes/feedback.js';
 import testGeminiRoutes from './routes/test-gemini.js';
 import chatRoutes from './routes/chat.js';
-import settingsRoutes from './routes/settings.js';
+
 import recordingsRoutes from './routes/recordings.js';
 import fs from 'fs';
 
